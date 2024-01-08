@@ -50,7 +50,7 @@ func main() {
 		},
 	}
 
-	resp, err := atproto.RepoCreateRecord(context.TODO(), cli, feed)
+	resp, err := atproto.RepoCreateRecord(context.Background(), cli, feed)
 	if err != nil {
 		log.Fatal(err)
 	}
